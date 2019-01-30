@@ -16,6 +16,7 @@
         android:padding="24dp"
         android:paddingTop="16dp">
 
+
         <ImageView
             android:layout_width="64dp"
             android:layout_height="64dp"
@@ -32,6 +33,33 @@
             android:text="@string/shr_app_name"
             android:textAllCaps="true"
             android:textSize="16sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/shr_hint_username">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:id="@+id/password_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/shr_hint_password"
+            app:errorEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"/>
+        </android.support.design.widget.TextInputLayout>
+
 
         <!-- Snippet from "Add text fields" section goes here. -->
 
